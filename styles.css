@@ -1,0 +1,32 @@
+:root {
+  --myprimary: #37517e;
+}
+.hero-section {
+  background-color: var(--myprimary);
+}
+.hero-subhd {
+  color: rebeccapurple;
+}
+.logo-list li {
+  filter: grayscale(100);
+}
+.logo-list li:hover {
+  filter: grayscale(0);
+}
+.hero-img {
+  animation: mymove 2s linear infinite alternate-reverse;
+}
+.about-hd {
+  color: var(--myprimary);
+}
+.eum{
+  background-color: #f3f5fa;
+}
+@keyframes mymove {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}

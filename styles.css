@@ -1,8 +1,26 @@
+*{
+  padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+
+}
+ul{
+  list-style: none;
+}
 :root {
-  --myprimary: #37517e;
+  --myprimary: rgb(55, 81, 126);
 }
 .hero-section {
   background-color: var(--myprimary);
+}
+.nav-item button{
+  transition: all 5s;
+
+ 
+}
+.nav-item button:hover{
+background-color: #308cb7;
 }
 .hero-subhd {
   color: rebeccapurple;
@@ -21,6 +39,13 @@
 }
 .eum{
   background-color: #f3f5fa;
+}
+.price-card {
+  border-radius: 10px;
+}
+.price-card-center{
+  border-top: solid 3px ;
+  border-top-color: #47b2e4;
 }
 @keyframes mymove {
   from {
@@ -87,3 +112,76 @@ background-attachment: fixed;
   color: var(--myprimary);
   
 }
+
+.img-card img{
+  transition: all 0.4s;
+}
+.img-card img:hover{
+  scale: 1.05;
+}
+.img-parent{
+overflow: hidden;
+position: relative;
+
+}
+
+ .overlay{
+  position: absolute;
+  background: rgba(55, 81, 126, 0.6);
+position: absolute;
+bottom: 7px;
+opacity: 0;
+transition: all 0.5s;
+} 
+.img-card:hover .overlay{
+  opacity: 1;
+ 
+
+}
+
+.img-card:hover .img-card img{
+  scale: 1.3;
+}
+
+.team-c-img{
+max-width: 145px;
+height: 145px;
+  border-radius: 50%;
+
+}
+.team-card {
+  font-family: josh,sans-serif !important;
+  border-radius: 5px;
+}
+.team-card h3,.team-icons i{
+  color: var(--myprimary)
+  ;
+  font-weight: bold;
+}
+.card-content{
+  border-bottom: #47b2e4 solid 3px;
+  border-top: #47b2e4 solid 3px;
+}
+.price-card-center{
+  border-top: #47b2e4 solid 3px;}
+  .sub-parent{
+    position: relative;
+  }
+  .sub-btn{
+    position: absolute;
+    right: 265px;
+  }
+  .ft-bottom{
+    background-color: var(--myprimary);
+  }
+  
+  .ft-para i{
+    padding-right: 2px;
+    color: #308cb7;
+    font-size: 10px;
+    line-height: 1;
+   font-weight: bolder;
+  }
+  .ft-para a:hover{
+    color: #47b2e4;
+  }

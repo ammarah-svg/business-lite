@@ -19,6 +19,17 @@ ul{
 
  
 }
+.top-btn button:hover{
+opacity: 1;
+color: #308cb7;
+}
+.acc-content:hover{
+  color: #308cb7;
+}
+.eum-text-part h3{
+  color: var(--myprimary);
+ 
+}
 .nav-item button:hover{
 background-color: #308cb7;
 }
@@ -46,6 +57,30 @@ background-color: #308cb7;
 .price-card-center{
   border-top: solid 3px ;
   border-top-color: #47b2e4;
+}
+.qstn-mark{
+  height: 35px;
+  width: 35px;
+  color: #47b2e4;
+  border: 3px solid #47b2e4;
+  border-radius: 50%;
+  margin-right: 14px;
+}
+.qstn-text:hover{
+  color: #47b2e4;
+}
+.team-hd,.pricing,.faqs-hd,.contact,.jonl-hd,.ft-ar,.ft-link,.ft-serv,.osn {
+  color: var(--myprimary);
+}
+.faq-cont{
+  width: 80%;
+  margin: auto;
+}
+.price-card h4, .price-card p{
+  color: var(--myprimary);
+}
+.price-card li{
+  color: #999999;
 }
 @keyframes mymove {
   from {
@@ -129,14 +164,12 @@ position: relative;
   position: absolute;
   background: rgba(55, 81, 126, 0.6);
 position: absolute;
-bottom: 7px;
+bottom: 14px;
 opacity: 0;
 transition: all 0.5s;
 } 
-.img-card:hover .overlay{
+.img-card :hover .overlay{
   opacity: 1;
- 
-
 }
 
 .img-card:hover .img-card img{
